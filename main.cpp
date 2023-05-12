@@ -1,11 +1,12 @@
 #include <iostream>
-#include "Parametr.hpp"
+#include "Parameters.hpp"
 
-extern Parametr_t myParams[];
-uint16_t vvv;
 
+//
 int main() {
-//    std::cout << *myParams[1].minValue << std::endl;
-//    std::cout << *myParams[0].maxValue << std::endl;
+
+    std::cout << xTableUserExt.byName.parametr1.convertVar(8) << std::endl;
+    std::cout << xTableUserExt.byPosition[1].convertVar(2) << std::endl;
+    std::cout << xTableUserExt.byName.parametr3.convertVar(5678) << std::endl;
     return 0;
 }
